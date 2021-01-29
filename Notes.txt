@@ -1,0 +1,10 @@
+creating First Angular App:
+step 1:open the command prompt and create folder and run the command prompt from that folder location.
+step 2: use the command prompt to create first angular application like "ng new <AppName>
+step 3:once we click on ok,it will ask following questions 
+    would you like to add routing?-yes/No
+    style sheet format?-css
+step 4:change the directory where angular application was created.
+   "cd <AppName>
+step 5:Run the Application.
+   "ng serve (or) "ng serve --open" (or) "ng s -o"
