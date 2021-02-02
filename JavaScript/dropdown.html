@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Example</title>
+</head>
+
+<body>
+    select country:
+    <select name="country" onchange="F1()" id="country">
+        <option value="IND">INDIA</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="singapore">SINGAPORE</option>
+    </select>
+    <br>
+
+    <h3 id="selectedcountry"></h3>
+
+    <script>
+        function F1() {
+            var country = document.getElementById("country").value;
+            var selectedvalue = document.getElementById("selectedcountry");
+
+
+            //selectedvalue.innerText = country;
+
+            /*if (country == "IND") {
+                selectedvalue.innerText = "capital is New Delhi";
+            } else if (country == "usa") {
+                selectedvalue.innerText = "capital is washington D.c";
+            } else if (country == "uk") {
+                selectedvalue.innerText = "capital is London";
+            } else if (country == "singapore") {
+                selectedvalue.innerText = "capital is Famosa";
+            }*/
+
+            switch (country) {
+                case "IND":
+                    selectedvalue.innerText = "capital is: New Delhi";
+                    break;
+                case "usa":
+                    selectedvalue.innerText = "capital is: washington D.c";
+                    break;
+                case "uk":
+                    selectedvalue.innerText = "capital is: London";
+                    break;
+                case "singapore":
+                    selectedvalue.innerText = "capital is: Famosa";
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

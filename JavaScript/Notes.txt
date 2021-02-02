@@ -1,0 +1,44 @@
+//class-2:
+InnerHTML or InnerText:
+-both are used to apply the content for the HTML tags dynamically.
+-InnerHTML will identify the HTML tags.
+-InnerText will treat everything as a text.
+
+//class-3
+mouseevents
+keyboard events
+dropdown
+
+//class-4
+Arrays:
+-an array is a variable which can be used to store multiple values
+-In JS we don't have a datatypes so that an array can store any type of values
+-generally array will store the data based on index and always index starts from "zero"
+-to access the data from an attay or to assign the datainto an array we use "Index".
+AR[1] = 10;       //assign
+console.log(AR[1]);      //retrieve
+
+-in javascript array is an object which contains few methods and properties 
+by using them we can perform manuplations.
+
+-Examples: push(),poop(),unshift(),slice(),splice(),reverse(),sort(),shift(
+
+
+//class-5
+    Json(javascript object notation):
+
+    var x=10;
+    var x=[109,'srivani',1234,5,9 ,'angular','manu']
+-it is also a information storage pattern,where the complete ingoumation will be stored in key and
+value pair where key and both are user defined.
+
+var emp = {empID:101,empName:'srivani',empSalary:12345,empExp:9,empRElExp:5,empSubject:'angular'};
+Limitation of javascript:
+------------------------
+-It is an interpreter based programming
+-writing plain javascript is messy and if the application is complex we can't handle it.
+-debugging is also somehow difficult.
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <div>
+        <form action="#" onsubmit="Login()">
+            <label for="uname">Enter Username:</label>
+            <input type="text" name="uname" id="uname">
+            <br>
+
+            <label for="pwd">Enter password:</label>
+            <input type="password" name="pwd" id="pwd">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+        <span id="SP1"></span>
+    </div>
+
+    <script>
+        function Login() {
+            var umame = document.getElementById("uname").value;
+            var pwd = document.getElementById("pwd").value;
+            var result = document.getElementById("SP1")
+
+            if(uname.length<=0){
+                alert("enter a value")
+            }
+
+            if (uname == "admin" && pwd == "admin") {
+                result.style.color = "green"
+                result.innerText = "Login success";
+            }else{
+                result.style.color = "red"
+                result.innerText = "Login failure";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

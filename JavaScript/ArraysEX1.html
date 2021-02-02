@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Example-1</title>
+</head>
+
+<body>
+    <h1>Example with arrays in JS</h1>
+    <button onclick="F1()">Get Data</button>
+    <ol id="list1"></ol>
+
+    <script>
+        function F1() {
+            var courses = ['html', 'css', 'spring', 'angular']
+            var list = document.getElementById("list1")
+            var s = ""
+            for (var i = 0; i < courses.length; i++) {
+                s += "<li>" + courses[i] + "</li>"
+                
+            }
+            list.innerHTML = s;
+        }
+    </script>
+</body>
+
+</html>

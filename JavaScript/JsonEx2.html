@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array with json</title>
+</head>
+
+<body>
+    <h1>Array with json</h1>
+    <button onclick="F2()">Get Data</button>
+    <table id="table1"  border="1"></table>
+
+    <script>
+        function F2() {
+
+            console.log('F2 calling');
+            var emps = [
+
+                { empID: 101, empName : 'srivani', empSalary: 100000 },
+
+            { empID: 102, empName : 'Manaswi', empSalary: 200000 },
+            { empID: 103, empName : 'Amogh', empSalary: 400000 },
+            { empID: 104, empName : 'subbarao', empSalary: 500000 }
+        ];
+
+        var empdata = document.getElementById("table1")
+        var str = ""
+        for (var i = 0; i < emps.length; i++) {
+             str = str + "<tr>";
+             str = str + "<td>" + emps[i].empID + "</td>";
+             str = str + "<td>" + emps[i].empName + "</td>";
+             str = str + "<td>" + emps[i].empSalary + "</td>";
+             str = str + "</tr>"
+        }
+        empdata.innerHTML = str;
+        }
+    </script>
+</body>
+
+</html>

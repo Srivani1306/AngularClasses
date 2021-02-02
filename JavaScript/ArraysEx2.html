@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays inbuilt methods</title>
+</head>
+
+<body>
+    <h1>Arrays methods in javascript</h1>
+    <script>
+        var ar = [100, 400, 200, 500, 600, 300]
+        //ar.push(700)     it is used to add the element at the end
+        //ar.unshift(50)       it is used to add the Element at the first
+        //ar.pop()            it is used to remove the element at the end
+        //ar.shift()        it is used to remove the element at the first
+
+        /*var br = ar.slice(1,3)     //it is used to get the portion of the array based on the index and store into new array
+        console.log(br)*/
+
+        // ar.splice(1,3);
+        //ar.splice(1,3,350,360)
+        // ar.sort()-it is used to display in the correct order
+        ar.reverse()
+        for (var i = 0; i < ar.length; i++) {
+            console.log(ar[i]);
+        }
+    </script>
+</body>
+
+</html>

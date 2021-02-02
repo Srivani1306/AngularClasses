@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard events</title>
+</head>
+
+<body>
+    <h1>keyboard Events</h1>
+    <label for="txtName">Enter your name</label>
+    <input type="text" onkeypress="F1()" name="txtName" id="txtName">
+    <br><br>
+    <span id="SP1"></span>
+    <span id="SP2"></span>
+
+    <script>
+        function F1(){
+            var name = document.getElementById('txtName').value;
+            var spObj1 = document.getElementById("SP1");
+            var spObj2 = document.getElementById("SP2");
+
+            spObj1.innerText = "<b>"+name.toLowerCase()+"</b>";
+            spObj2.innerText = "<b>"+name.toUpperCase()+"</b>";
+        }
+    </script>
+</body>
+
+</html>

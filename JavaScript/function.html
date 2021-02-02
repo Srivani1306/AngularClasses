@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example-2</title>
+</head>
+
+<body>
+
+    <h1 id="head">Welcome to javaScript</h1>
+
+    <div>
+        Enter your name:<input type="text" name="T1" id="T1"><br>
+        <button onclick="F1()">Get Name</button>
+    </div>
+    <script>
+        /* function F1() {
+             var age = prompt("Enter your age");
+             alert('welcome Mr/Mrs. ' + age);
+         }*/
+
+        function F1() {
+            var x = document.getElementById('T1').value;
+            console.log('welcome to Mr/Mrs. '+x);
+            console.dir(document.getElementById("head"));
+        }
+    </script>
+</body>
+
+</html>

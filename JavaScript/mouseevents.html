@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Example</title>
+    <style>
+        div {
+            border: 2px solid green;
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1" onmouseover="F1()" onmouseout="F2()">
+        <h3>welcome to Mouse Event</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos nesciunt rem placeat quam doloribus, aspernatur maiores a.
+            Deserunt corrupti sunt commodi iste ex delectus exercitationem cumque nihil.
+            Similique, ducimus veniam!</p>
+    </div>
+    <script>
+        function F1() {
+          var x =  document.getElementById("div1")
+          x.style.color = "cyan"
+          x.style.backgroundColor = "black"
+        }
+
+        function F2() {
+            var x =  document.getElementById("div1")
+          x.style.color = "black"
+          x.style.backgroundColor = "cyan"
+        }
+    </script>
+</body>
+
+</html>
