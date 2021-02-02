@@ -1,0 +1,160 @@
+class-5:
+----------------------------
+Typescript:
+----------
+-It is a scripting language introduced by Microsoft used to generate javascript code 
+once if the compilation happens
+-typescript is a superset of javascript
+-typescript = javascript + datatype + compiler
+-browser is not able to understand the typescript code,so that we have to generate javascript by compilation progress.
+-to generate it we use 'tsc <typescript_filename>.ts',where tsc stands for "typescript compiler"
+-every javascript file can be  renamed as typescript also and we can use
+-we should install node js and typescript from npm.
+-the process of converting typescript code into javascript we call it as "transpilation".
+-
+-------------------------------------------------------------------------------------------------------
+
+class-6:
+-------------------------------------------------------
+Datatypes:
+---------
+-it is used to specify what type of value we can have in the variable
+-a variable is a named memory location used to store the value.
+-in typescript to create a variable we use "var/let/const".
+-var is a function scoped,once we define var variables and reinitialize 
+it will modified in all the places.
+-let is a block scoped variable,'every block let variable is unique'.
+
+-var can be defined multiple times,but let can be defined within 
+the block only once.
+
+-let syntax:  let variable:datatype = value;
+
+-in ts,we have two types:
+      -Basic types
+        number
+        string 
+        boolean
+     -complex types:
+         Arrays-an aray is used to store multiple values of same type.
+              syntax:
+              -------
+              let variable:datatype[]=[elements]  or
+              let variable:array<datatype> = [value]
+         Tuple:
+         -----
+            it is similar to array but it will store different Datatypes
+            syntax:
+            ------
+            let variable:[datatype1,datatype2....] = [value1,value2....]
+         Enum:
+         -----
+         syntax:
+         ------
+                  enum variablename{
+
+                  }
+      ----------------------------------------------------------------------------------------------------
+      class-7:
+      ------------------
+      conditional statements:
+      ------------------------   if
+                                 if-else 
+                                 if-else ladder
+                                 nested if else
+                                 switch case
+
+               Loops:
+               ------
+                        for in
+                        for of
+                        for 
+                        while
+                        do while
+
+
+      function:
+      ---------       function is a reusable block which will be call when it requires.
+
+                    -define a function
+                    -calling a function
+                    -use function as a class
+   ---------------------------------------------------------------------------------------------------
+   class-8:
+   --------
+   class:
+   -----    it is a collection of prooperties and methods thosw are of similar type.
+
+   object:-   it is a instance of class,it give physical existance for the class members
+   encaposulation:-  it is the process of binding the members with the class
+   abstraction: - it is the process of hiding the implementation and providing security
+   polymorphism:-  one to many forms,method overloading and overriding  ,
+            but overloading is not supporting in javascript.
+   inheritance:-    it is the process of aquiring the properties ofone class into another class
+                   -single-single parent and single child(a=>b)
+                   -multi level-class chaining(a=>b=>c=>....)
+                   -multiple-multiple parent and single child(a,b=c)
+                   -hybrid-any of two combination(single,multiple,multi level,hybrid,heirarical)
+                   -heirarical-single parent and multiple child
+
+-constructor:  it is used to initialize data to the class members.in TS we can have only 
+  one constructor.   
+  -In TS if we want to access the members of the class then it ismust to use 'this'
+  -in TS we have 3 types of access  modifiers like
+     -private-cen be accesable with in the class
+     -public-can be accesable anywhere(default)
+     -protected-can be accesable only based on the derived class
+
+     Note:
+     -----  For the class we can't provide access modifiers.
+
+
+     ---------------------------------------------------------------------------------------------------------------
+     class-9:
+     ---------
+     Note:
+     -----   Method \function overloading is not possible in javascript\typescript
+            -so that once if we cen give parameters then we must have to supply those many values.
+            -in typescript we have a concept of optional parameters and default parameters,which 
+              can be used to provide kind of overloading functionalities.
+            -if it is a optional parameters,we can't give values,but if it is a default parameter we can initialize.
+
+   Abstract class:
+   ---------------   A class which contains one or more Abstract methods ,i.e Abstract class.
+                 -abstract method is used to declaration,not the implementation.
+                 -it is mainly used to provide runtime polymorphism.
+                 -the child class will be access parent class members and provide the implementation.
+                 -once we inherit a class from abstract class it is must to provide the implementation in child class.
+
+   interface:
+   ----------    it is similat to the class and it contain all abstract members
+                -it is a contract between itself and derived classes,interface provide rules and derived class
+                 must follow them and provide implementation.
+                 -in javascript ,we don't have the concept of interface
+                 -by default,interface members are public and abstract
+                 -arthemetic classes and interface can't be instantiate.
+
+   Arrow function:-
+   --------------
+                  -it is an anonymous function and we no need give any name for the function.
+                  -in TS/JS we have two types of function:
+                     -Named function
+                       public Add(){}
+                     -Anonymous function
+                       let x = function(){}
+                  -to create anonymous function we use "=>"
+                  (param1,param2,param3.....) => expression
+
+  Generics:
+  ----------     - it is nothing but general datatypes.
+                -at the time of declaration,we are giving generic types and while intialization will
+                 be using proper types.
+                -these are typesafe in nature.
+
+  Modules:
+  --------    -it is used to provide its class and members to another class
+              -in Modules,we use import and export statements
+              -export is used to giving privillage to access the members
+              -import is used to access it.
+
+
